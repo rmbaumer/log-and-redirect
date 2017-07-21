@@ -1,5 +1,5 @@
 <?php
-include('../session.php');
+include('session.php');
 
 // Entry Page
 switch ($entry) {
@@ -19,16 +19,16 @@ switch ($entry) {
 // Exit Page
 switch ($_SERVER['HTTP_REFERER']) {
   case 'https://www.yourdomain.tld/aSubpage/':
-    $entryid = 'a01';
+    $exitid = 'a01';
     break;
   case 'https://www.yourdomain.tld/anotherSubpage/':
-    $entryid = 'a02';
+    $exitid = 'a02';
     break;
   case 'https://www.yourdomain.tld':
-    $entryid = 'hmp';
+    $exitid = 'hmp';
     break;
   default:
-    $entryid = 'NA';  
+    $exitid = 'NA';  
 }
 
 // Screen Width 

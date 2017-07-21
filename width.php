@@ -1,5 +1,5 @@
 <?php
-//track screen width
+// Screen Width
 $pwidth = $_POST["width"];     
 if (($pwidth >= 1) && ($pwidth <= 480)) { $size='xs';}     
 elseif (($pwidth >= 481) && ($pwidth <= 768)) { $size='sm';} 
